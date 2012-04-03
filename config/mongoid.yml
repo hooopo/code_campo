@@ -1,0 +1,12 @@
+development:
+  host: <%= ENV["host"]%>
+  database: <%= ENV["database"]%>
+
+test:
+  host: <%= ENV["host"]%>
+  database: <%= ENV["database"]%>
+
+# set these environment variables on your prod server
+production:
+  host: <%= ENV["host"]%>
+  database: <%= ENV["database"]%>
