@@ -32,3 +32,9 @@ vim ~/.bashrc
     bundle install
     rake db:seed
     rails s thin
+
+deploy to Heroku
+
+    heroku create app_name --stack cedar
+    set heroku env
+    git push heroku master
