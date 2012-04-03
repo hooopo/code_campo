@@ -16,7 +16,7 @@
       :javascript
         google.load('search', '1', {language : '#{I18n.locale}'});
         google.setOnLoadCallback(function() {
-        var customSearchControl = new google.search.CustomSearchControl('#{APP_CONFIG['google_custom_search_id']}');
+        var customSearchControl = new google.search.CustomSearchControl('#{ENV['GOOGLE_CUSTOM_SEARCH_ID']}');
         customSearchControl.setResultSetSize(google.search.Search.FILTERED_CSE_RESULTSET);
         customSearchControl.draw('cse');
         }, true);

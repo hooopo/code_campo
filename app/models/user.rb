@@ -87,7 +87,7 @@ class User
   end
 
   def admin?
-    APP_CONFIG['admin_emails'].include?(self.email)
+    ENV['ADMIN_EMAILS'].split(",").include?(self.email)
   end
 
   # TODO old data migration begin

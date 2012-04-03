@@ -64,4 +64,4 @@ module CodeCampo
 end
 
 AllowLocale = %w(zh-CN en)
-APP_CONFIG = YAML.load_file("#{Rails.root}/config/app_config.yml")[Rails.env]
+# APP_CONFIG = YAML.load_file("#{Rails.root}/config/app_config.yml")[Rails.env]
