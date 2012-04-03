@@ -15,6 +15,6 @@ class Admin::BaseControllerTest < ActionController::TestCase
   end
 
   def init_admin
-    @admin ||= User.where(:email => APP_CONFIG['admin_emails']).first || Factory(:user, :email => APP_CONFIG['admin_emails'].first)
+    @admin ||= User.where(:email => ENV['cc_admin_emails'].split(",")).first || Factory(:user, :email => ENV['cc_admin_emails'].split(",").first)
   end
 end

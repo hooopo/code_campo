@@ -7,3 +7,4 @@ tmp/
 *.swo
 config/app_config.yml
 public/assets
+nbproject/*

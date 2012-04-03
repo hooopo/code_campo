@@ -8,12 +8,27 @@ It's the source of http://codecampo.com , a light weight bbs for developer.
 * rails 3.1
 * mongodb 1.8+
 
+## Set Dev and Test Environments
+
+vim ~/.bashrc
+
+    export cc_admin_emails=hoooopo@gmail.com,hooopo@gmail.com
+    export cc_secret_token=55eae02566fdd7adb439b51e241b9229d5d9dd11a415b2590825b9ba243ea2ca391b1723f386834793cf60967a9262b9216bbb4881cae86dbf9ce5823e3b5d11
+    export cc_google_custom_search_id=xxx
+    export cc_test_uri=mongodb://localhost/code_campo_test?identity_map_enabled=true
+    export cc_development_uri=mongodb://localhost/code_campo?identity_map_enabled=true
+
+## Set Production Environments
+
+    heroku config:add cc_admin_emails=hoooopo@gmail.com,hooopo@gmail.com
+    heroku config:add cc_secret_token=55eae02566fdd7adb439b51e241b9229d5d9dd11a415b2590825b9ba243ea2ca391b1723f386834793cf60967a9262b9216bbb4881cae86dbf9ce5823e3b5d11
+    heroku config:add cc_google_custom_search_id=xxx
+    heroku config:add MONGOHQ_URL=mongodb://<user>:<password>@flame.mongohq.com:27054/<database>?identity_map_enabled=true
+
 ## Setup
 
-    git clone git@github.com:chloerei/code_campo.git
+    git clone git://github.com/hooopo/code_campo.git
     cd code_campo
     bundle install
-    cp config/app_config.example.yml config/app_config.yml
-    cp config/mongoid.example.yml config/mongoid.yml
     rake db:seed
-    rails s
+    rails s thin

@@ -1,10 +1,8 @@
 development:
-  host: <%= ENV["host"]%>
-  database: <%= ENV["database"]%>
+  uri: <%= ENV["cc_development_uri"]%>
 
 test:
-  host: <%= ENV["host"]%>
-  database: <%= ENV["database"]%>
+  uri: <%= ENV["cc_test_uri"]%>
 
 # set these environment variables on your prod server
 production:

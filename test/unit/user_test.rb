@@ -48,6 +48,6 @@ class UserTest < ActiveSupport::TestCase
 
   test "admin logic by Setings admin emails" do
     assert !Factory(:user).admin?
-    assert Factory(:user, :email => APP_CONFIG['admin_emails'].first).admin?
+    assert Factory(:user, :email => ENV['cc_admin_emails'].split(",").first).admin?
   end
 end
