@@ -1,9 +1,9 @@
 module ApplicationHelper
   def page_title
     if @page_title
-      "#{@page_title} - CodeCampo"
+      "#{@page_title} - #{ENV["cc_site_name"] || 'CodeCampo'}"
     else
-      "CodeCampo"
+      ENV["cc_site_name"] || 'CodeCampo'
     end
   end
 

@@ -17,8 +17,8 @@ en:
   or: "or"
   zh-CN: "Chinese(Simplified)"
   en: "English"
-  code_campo_newest_topics: "CodeCampo Newest Topics"
-  code_campo_tagged_newest_topics: "CodeCampo Newest Topics Tagged：%{tag}"
+  code_campo_newest_topics: " Newest Topics"
+  code_campo_tagged_newest_topics: " Newest Topics Tagged：%{tag}"
 
   layouts:
     settings:

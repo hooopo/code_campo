@@ -10,7 +10,7 @@ site = Site.new
 
 site.fragment.footer = <<-EOF
 <div class="pull-left">
-  <p>CodeCampo is a small community for web develeper and open source in <a href="https://github.com/chloerei/code_campo">Github</a> by <a href="https://twitter.com/chloerei">@chloerei</a>.</p>
+  <p>#{ENV["cc_site_name"] || 'CodeCampo'} is a small community for web develeper and open source in <a href="https://github.com/chloerei/code_campo">Github</a> by <a href="https://twitter.com/chloerei">@chloerei</a>.</p>
   <p>Feel free to use source code under MIT license.</p>
 </div>
 <div class="pull-right">
