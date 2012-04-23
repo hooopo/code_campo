@@ -183,7 +183,6 @@ DEPENDENCIES
   client_side_validations!
   client_side_validations-mongoid
   coffee-rails
-  eventmachine
   factory_girl_rails
   foreman
   gravtastic
