@@ -21,6 +21,8 @@ gem 'rails-i18n'
 gem 'jquery-rails'
 gem 'highlight_js-rails'
 gem 'thin'
+gem 'foreman', :require => false
+gem 'eventmachine'
 
 # Gems used only for assets and not required
 # in production environments by default.
@@ -31,7 +33,6 @@ group :assets do
   gem 'therubyracer'
 end
 
-gem 'whenever', :require => false
 group :development do
   gem 'capistrano', :require => false
 end
