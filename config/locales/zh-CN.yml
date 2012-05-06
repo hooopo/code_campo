@@ -29,7 +29,7 @@ zh-CN:
     topbar:
       home: "首页"
       resources: "资源"
-      topics: "话题"
+      topics: "文章"
       search: "搜索"
       profiles: "个人资料"
       settings: "设置"
@@ -53,18 +53,18 @@ zh-CN:
     previous: "上一页"
   homepage:
     index:
-      more_topics: "» 更多话题"
-      create_topic: "创建话题"
+      more_topics: "» 更多文章"
+      create_topic: "创建文章"
       site_status: "全站统计"
       users_count: "用户数 %{count}"
-      topics_count: "话题数 %{count}"
+      topics_count: "文章数 %{count}"
       replies_count: "回帖数 %{count}"
       subscribe: "订阅"
   people:
     show:
       edit_profile: "编辑个人资料"
       person_status: "个人统计"
-      topics_count: "话题数 %{count}"
+      topics_count: "文章数 %{count}"
       replies_count: "回帖数 %{count}"
   users:
     new:
@@ -140,33 +140,33 @@ zh-CN:
       mark: "收藏"
       marker_count: "%{count}人收藏"
     index:
-      topics: "话题"
+      topics: "文章"
       active: "活跃"
       newest: "最新"
       marked: "收藏"
-      my: "我的话题"
+      my: "我的文章"
       tagged: "标记为：%{tag}"
       replied: "回复过"
-      no_topics: "没有话题"
+      no_topics: "没有文章"
       settings: "设置"
-      create_topic: "创建话题"
+      create_topic: "创建文章"
       subscribe: "订阅"
     show:
-      topics: "话题"
-      post_reply: "回复话题？"
-      relate_topics: "相关话题"
-      no_relate_topics: "没有相关话题"
+      topics: "文章"
+      post_reply: "回复文章？"
+      relate_topics: "相关文章"
+      no_relate_topics: "没有相关文章"
     new:
-      topics: "话题"
-      create_topic: "创建话题"
+      topics: "文章"
+      create_topic: "创建文章"
     edit:
-      topics: "话题"
+      topics: "文章"
   replies:
     edit:
-      topics: "话题"
+      topics: "文章"
       edit_reply: "编辑回复"
     new:
-      topics: "话题"
+      topics: "文章"
       new_reply: "新回复"
   search:
     show:
@@ -246,8 +246,8 @@ zh-CN:
         home_mainbar_bottom_description: ""
         home_sidebar_bottom: "首页边栏底部"
         home_sidebar_bottom_description: ""
-        topics_sidebar_bottom: "话题边栏底部"
-        topics_sidebar_bottom_description: "包括话题索引和话题详细页"
+        topics_sidebar_bottom: "文章边栏底部"
+        topics_sidebar_bottom_description: "包括文章索引和文章详细页"
         footer: "全站底部"
         footer_description: "网站信息"
       edit:
