@@ -17,8 +17,8 @@ zh-CN:
   or: "或者"
   zh-CN: "中文（简体）"
   en: "英文"
-  code_campo_newest_topics: " 最新主题"
-  code_campo_tagged_newest_topics: " 最新主题 标签：%{tag}"
+  code_campo_newest_topics: " 最新文章"
+  code_campo_tagged_newest_topics: " 最新文章 标签：%{tag}"
 
   layouts:
     settings:
@@ -37,7 +37,7 @@ zh-CN:
     admin:
       dashboard: "面板"
       users: "用户"
-      topics: "主题"
+      topics: "文章"
       replies: "回复"
       fragments: "页面片段"
       back_home: "回到前台"
@@ -93,7 +93,7 @@ zh-CN:
       mention:
         mention_you_in: "提及了你"
       topic_reply:
-        reply_your_topic: "回复了你的主题"
+        reply_your_topic: "回复了你的文章"
       resource_comment:
         comment_your_resource: "回复了你的资源"
       comment_comment:
@@ -175,7 +175,7 @@ zh-CN:
     dashboard:
       show:
         more: "更多"
-        topics: "主题"
+        topics: "文章"
         today_total_count: "今天 %{today_count} / 总共 %{total_count}"
         title: "标题"
         user: "用户"
@@ -199,8 +199,8 @@ zh-CN:
         url: "网址"
         description: "简介"
         email: "Email"
-        delete_confirm: "确认删除用户 %{name} 吗？（主题和回复会被一并删除且不能恢复）"
-        topics: "主题（%{count}）"
+        delete_confirm: "确认删除用户 %{name} 吗？（文章和回复会被一并删除且不能恢复）"
+        topics: "文章（%{count}）"
         replies: "回复（%{count}）"
         action: "操作"
         title: "标题"
@@ -215,22 +215,22 @@ zh-CN:
         user: "用户"
         replies_count: "回复数"
       show:
-        topics: "主题"
+        topics: "文章"
         user: "用户"
         content: "内容"
         marker_count: "收藏数"
         replies_count: "回复数"
-        delete_confirm: "确定删除主题 %{title} 吗？（所有回帖会被一并删除）"
+        delete_confirm: "确定删除文章 %{title} 吗？（所有回帖会被一并删除）"
         action: "操作"
       destroy:
-        delete_success: "成功删除主题 %{title}"
+        delete_success: "成功删除文章 %{title}"
     replies:
       index:
         content: "内容"
         user: "用户"
       show:
         replies: "回复"
-        topic: "主题"
+        topic: "文章"
         user: "用户"
         content: "内容"
         delete_confirm: "确定删除回复吗？"

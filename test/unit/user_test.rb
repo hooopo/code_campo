@@ -3,14 +3,14 @@ require 'test_helper'
 class UserTest < ActiveSupport::TestCase
   test "should have password" do
     password = '123456'
-    user = Factory :user, :password => password, :password_confirmation => password
+    user = FactoryGirl.create :user, :password => password, :password_confirmation => password
     assert_not_nil user.password_digest
     assert user.authenticate(password)
     assert !user.authenticate(password + 'wrong')
   end
 
   test "should generate remember token" do
-    user = Factory :user
+    user = FactoryGirl.create :user
     assert_not_nil user.remember_token
     token = user.remember_token
     assert_equal user, User.find_by_remember_token(token)
@@ -22,7 +22,7 @@ class UserTest < ActiveSupport::TestCase
 
   test "change email, password need current_password" do
     password = '123456'
-    user = Factory :user, :password => password, :password_confirmation => password
+    user = FactoryGirl.create :user, :password => password, :password_confirmation => password
     user.name = 'change_name'
     assert !user.save
     assert user.errors[:current_password].any?
@@ -34,7 +34,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "should have access_token, and find user by access_token" do
-    user = Factory :user
+    user = FactoryGirl.create :user
     assert_not_nil user.access_token
     assert_equal user, User.find_by_access_token(user.access_token)
     
@@ -47,7 +47,7 @@ class UserTest < ActiveSupport::TestCase
   end
 
   test "admin logic by Setings admin emails" do
-    assert !Factory(:user).admin?
-    assert Factory(:user, :email => ENV['cc_admin_emails'].split(",").first).admin?
+    assert !FactoryGirl.create(:user).admin?
+    assert FactoryGirl.create(:user, :email => ENV['cc_admin_emails'].split(",").first).admin?
   end
 end

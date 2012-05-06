@@ -2,7 +2,7 @@ require 'test_helper'
 
 class Settings::ProfilesControllerTest < ActionController::TestCase
   def setup
-    @user = Factory :user
+    @user = FactoryGirl.create :user
   end
 
   test "should get profile page" do

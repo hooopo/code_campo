@@ -2,9 +2,9 @@ require 'test_helper'
 
 class TagTest < ActiveSupport::TestCase
   test "should recount tags" do
-    Factory :topic, :tags => ['one']
-    Factory :topic, :tags => ['one', 'two']
-    Factory :topic, :tags => ['one', 'two', 'three']
+    FactoryGirl.create :topic, :tags => ['one']
+    FactoryGirl.create :topic, :tags => ['one', 'two']
+    FactoryGirl.create :topic, :tags => ['one', 'two', 'three']
     Tag.recount
     assert_equal 3, Tag.count
     assert_equal 3, Tag.find('one').value

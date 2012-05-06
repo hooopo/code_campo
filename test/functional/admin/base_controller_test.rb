@@ -7,7 +7,7 @@ class Admin::BaseControllerTest < ActionController::TestCase
     assert !logined?
     yield
     assert_redirected_to login_path
-    login_as Factory(:user)
+    login_as FactoryGirl.create(:user)
     yield
     assert_redirected_to root_path
     login_as @admin
@@ -15,6 +15,6 @@ class Admin::BaseControllerTest < ActionController::TestCase
   end
 
   def init_admin
-    @admin ||= User.where(:email => ENV['cc_admin_emails'].split(",")).first || Factory(:user, :email => ENV['cc_admin_emails'].split(",").first)
+    @admin ||= User.where(:email => ENV['cc_admin_emails'].split(",")).first || FactoryGirl.create(:user, :email => ENV['cc_admin_emails'].split(",").first)
   end
 end
