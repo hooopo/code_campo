@@ -1,9 +1,12 @@
 development:
   uri: <%= ENV["cc_development_uri"]%>
+  identity_map_enabled: true
 
 test:
   uri: <%= ENV["cc_test_uri"]%>
+  identity_map_enabled: true
 
 # set these environment variables on your prod server
 production:
   uri: <%= ENV["MONGOHQ_URL"]%>
+  identity_map_enabled: true
