@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 # ClientSideValidations Initializer
 
 #require 'client_side_validations/simple_form' if defined?(::SimpleForm)

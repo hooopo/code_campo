@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::FragmentsController < Admin::BaseController
   before_filter :find_field, :except => :index
 

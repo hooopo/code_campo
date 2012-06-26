@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 module TopicsHelper
   def subscribe_url
     case action_name

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Notification::Base
   include Mongoid::Document
   include Mongoid::Timestamps::Created

@@ -34,6 +34,9 @@ end
 
 group :development do
   gem 'capistrano', "~> 2.12", :require => false
+  gem 'magic_encoding', "~> 0.0.2", :require => false
+  gem 'pry-rails', "~> 0.1"
+  gem 'awesome_print'
 end
 
 group :test, :development do

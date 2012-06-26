@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 CodeCampo::Application.routes.draw do
   root :to => 'homepage#index'
 

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::RepliesController < Admin::BaseController
   before_filter :find_reply, :except => :index
 

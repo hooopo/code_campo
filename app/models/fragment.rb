@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Fragment
   include Mongoid::Document
 

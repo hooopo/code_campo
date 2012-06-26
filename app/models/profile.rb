@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Profile
   include Mongoid::Document
 

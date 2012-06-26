@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class NotificationsController < ApplicationController
   before_filter :require_logined
   respond_to :html, :js, :only => [:mark_all_as_read, :destroy]

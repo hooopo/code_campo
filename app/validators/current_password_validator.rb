@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class CurrentPasswordValidator < ActiveModel::EachValidator
   def initialize(options)
     options[:column] ||= []

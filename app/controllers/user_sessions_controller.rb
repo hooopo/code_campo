@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class UserSessionsController < ApplicationController
   before_filter :require_no_logined, :except => :destroy
 

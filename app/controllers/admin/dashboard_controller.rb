@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Admin::DashboardController < Admin::BaseController
   def show
     @topics = Topic.order_by([:created_at, :desc]).limit(5)

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class TagStringValidator < ActiveModel::EachValidator
   def initialize(options)
     options[:limit] ||= 5

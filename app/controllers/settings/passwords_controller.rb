@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Settings::PasswordsController < ApplicationController
   before_filter :require_logined
   layout 'settings'

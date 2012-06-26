@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class TopicsController < ApplicationController
   before_filter :old_id_redirect, :only => [:show]
   before_filter :require_logined, :except => [:index, :show, :tagged, :newest]

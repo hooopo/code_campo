@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class RepliesController < ApplicationController
   before_filter :require_logined
   before_filter :find_topic, :only => [:new, :create]

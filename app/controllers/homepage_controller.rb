@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class HomepageController < ApplicationController
   def index
     @topics = Topic.active.limit(10)

@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 class Settings::ProfilesController < ApplicationController
   before_filter :require_logined
   layout 'settings'

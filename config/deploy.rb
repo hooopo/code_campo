@@ -1,3 +1,4 @@
+# -*- encoding : utf-8 -*-
 $:.unshift(File.expand_path('./lib', ENV['rvm_path']))
 require "rvm/capistrano"
 set :rvm_bin_path, "/usr/local/bin"
