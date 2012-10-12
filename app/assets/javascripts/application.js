@@ -11,3 +11,4 @@
 //= require rails.validations.custom
 //= require highlight
 //= require code_campo
+//= require turbolinks
