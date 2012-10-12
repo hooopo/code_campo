@@ -4,7 +4,8 @@ gem 'rails', '~> 3.2'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
-gem 'turbolinks', "~> 0.5"
+gem 'turbolinks', :git => "git://github.com/hooopo/turbolinks.git"
+gem 'jquery-turbolinks'
 gem 'bcrypt-ruby', "~> 3.0"
 gem 'mongoid', "~> 2.4"
 gem 'bson_ext', "~> 1.6"

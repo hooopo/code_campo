@@ -6,9 +6,10 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require turbolinks
+//= require jquery.turbolinks
 //= require twitter/bootstrap
 //= require rails.validations
 //= require rails.validations.custom
 //= require highlight
 //= require code_campo
-//= require turbolinks
