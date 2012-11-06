@@ -1,1 +1,1 @@
-web: bundle exec unicorn -s
+web: bundle exec unicorn --server unicorn
