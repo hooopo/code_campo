@@ -1,1 +1,1 @@
-web: bundle exec unicorn --server unicorn
+web: bundle exec unicorn_rails
